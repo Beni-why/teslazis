@@ -8,6 +8,7 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(data: any) {
+    console.log(data)
     return this.http.post(`${this.apiUrl}/login`, data);
   }
 
